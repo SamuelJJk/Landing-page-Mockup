@@ -18,8 +18,8 @@
         </div>
       </div>
       <div class="rightNav">
-        <button class="navBtn" id="login">Login In</button>
-        <button class="navBtn" id="signin">Sign In</button>
+        <button class="navBtn" id="login" onclick="">Login In</button>
+        <button class="navBtn" id="signin" onclick="">Sign In</button>
       </div>
     </div>
     <!-- Hero page  -->
@@ -42,10 +42,54 @@
         <img src="https://i.ibb.co/c1ydxLv/X.png" alt="Amazon Prime Logo" />
       </div>
     </div>
+    <!-- page banner  -->
     <div class="pageBanner">
-      <div class="pageCards"></div>
-      <div class="pageCards"></div>
-      <div class="pageCards"></div>
+      <div class="pageCards" id="imgOne">
+        <div class="cardText"></div>
+      </div>
+      <div class="pageCards" id="imgTwo">
+        <div class="cardText"></div>
+      </div>
+      <div class="pageCards" id="imgThree">
+        <div class="cardText"></div>
+      </div>
+    </div>
+
+    <!-- login and sign in pop ups -->
+    <div id="account" class="userInfo">
+      <div class="user-content">
+        <span class="close">&times;</span>
+        <!-- Your login/sign-in form goes here -->
+        <div class="form-box">
+          <div class="login-form">
+            <form action="post">
+              <h1>Login</h1>
+              <label for="user-name">UserName:</label>
+              <input type="text" name="user-name" /> <br />
+              <label for="password">Password:</label>
+              <input type="password" name="password" />
+            </form>
+            <br />
+            <br />
+            <button>Login</button>
+          </div>
+          <div class="divider"></div>
+          <div class="signup-form">
+            <form action="post">
+              <h1>Sign-up</h1>
+              <label for="name">Name:</label>
+              <input type="text" name="name" /> <br />
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="" /> <br />
+              <label for="password">Password:</label>
+              <input type="password" name="password" />
+            </form>
+            <br />
+            <br />
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="app.js" async defer></script>
